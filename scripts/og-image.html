@@ -1,0 +1,54 @@
+<!doctype html>
+<!--
+  Source for public/og-image.png (the link preview card for LinkedIn, WhatsApp, X).
+  Re-render after editing:
+  & 'C:\Program Files\Google\Chrome\Application\chrome.exe' --headless=new --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,630 --virtual-time-budget=5000 --screenshot=public\og-image.png scripts\og-image.html
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;900&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { width: 1200px; height: 630px; overflow: hidden; background: #0c0c0c; }
+      body { font-family: 'Kanit', sans-serif; color: #d7e2ea; position: relative; }
+
+      .glow {
+        position: absolute; right: -120px; bottom: -220px; width: 760px; height: 760px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(118, 33, 176, 0.45) 0%, rgba(182, 0, 168, 0.18) 40%, transparent 70%);
+      }
+      .portrait {
+        position: absolute; right: 10px; bottom: 0; width: 560px; height: 560px;
+        -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 99%);
+        mask-image: linear-gradient(to bottom, #000 72%, transparent 99%);
+      }
+      .text { position: absolute; left: 72px; top: 0; bottom: 0; width: 640px; display: flex; flex-direction: column; justify-content: center; }
+      .kicker { font-weight: 500; font-size: 22px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(215, 226, 234, 0.7); }
+      h1 {
+        margin-top: 14px; font-weight: 900; font-size: 112px; line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase;
+        background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+        -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      }
+      .role { margin-top: 26px; font-weight: 500; font-size: 32px; text-transform: uppercase; letter-spacing: 0.06em; }
+      .skills { margin-top: 14px; font-weight: 300; font-size: 24px; color: rgba(215, 226, 234, 0.75); }
+      .bar {
+        margin-top: 34px; width: 120px; height: 8px; border-radius: 99px;
+        background: linear-gradient(123deg, #18011f 0%, #b600a8 35%, #7621b0 70%, #be4c00 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glow"></div>
+    <img class="portrait" src="../public/portrait.webp" alt="" />
+    <div class="text">
+      <div class="kicker">Abu Dhabi, UAE</div>
+      <h1>Abdullah<br />Ashraf</h1>
+      <div class="role">Data Analyst · BI &amp; AI Automation</div>
+      <div class="skills">Power BI · SQL · Python · AI automation with Claude</div>
+      <div class="bar"></div>
+    </div>
+  </body>
+</html>
