@@ -46,6 +46,7 @@ export type Project = {
   tools: string[];
   stats: [Stat, Stat, Stat];
   link?: { label: string; href: string };
+  image?: { src: string; alt: string };
 };
 
 export const PROJECTS: Project[] = [
@@ -60,6 +61,7 @@ export const PROJECTS: Project[] = [
       { value: '80–90', label: 'corporate clients tracked' },
       { value: '5 → 20', label: 'PCs since launch' },
     ],
+    image: { src: '/expiry-desk.webp', alt: 'Expiry Desk home screen, shown with made-up company names' },
   },
   {
     name: 'Road Accident Severity',
