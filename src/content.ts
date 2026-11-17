@@ -56,9 +56,9 @@ export const PROJECTS: Project[] = [
       'An offline tracker for visa, Emirates ID, labour card and trade licence renewals. It sends one-click WhatsApp and Gmail reminders, tracks follow-ups and renewal outcomes, and keeps daily backups. It replaced manual cross-checks of expiry emails.',
     tools: ['Claude Code', 'Google Drive sync', 'Playwright tests'],
     stats: [
-      { value: '15', label: 'office PCs using it' },
-      { value: '5 → 15', label: 'PCs since launch' },
-      { value: '50–60', label: 'corporate clients tracked' },
+      { value: '20', label: 'staff using it' },
+      { value: '80–90', label: 'corporate clients tracked' },
+      { value: '5 PCs', label: 'at launch, October 2026' },
     ],
   },
   {
