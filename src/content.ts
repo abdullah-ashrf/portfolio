@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
     stats: [
       { value: '20', label: 'staff using it' },
       { value: '80–90', label: 'corporate clients tracked' },
-      { value: '5 PCs', label: 'at launch, October 2026' },
+      { value: '5 → 20', label: 'PCs since launch' },
     ],
   },
   {
@@ -85,6 +85,7 @@ export const PROJECTS: Project[] = [
       { value: '363', label: 'records, 2011 to 2022' },
       { value: '47% → 5%', label: 'forecast error after the fix' },
     ],
+    link: { label: 'GitHub', href: `${LINKS.github}/london-fly-tipping` },
   },
 ];
 
