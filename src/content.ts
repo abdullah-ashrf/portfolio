@@ -17,6 +17,14 @@ export const ABOUT_TEXT =
 
 export const SKILLS = [
   {
+    name: 'AI Automation',
+    desc: 'Internal tools built with Claude and Claude Code. Expiry Desk tracks renewals for 80–90 client companies and is used by 20 staff. Attestation letters went from about 15 minutes to 3 with Python and Claude. I train the team to use what I build.',
+  },
+  {
+    name: 'Process Automation',
+    desc: 'Finding where the hours go and taking the repeat work away: one-click WhatsApp and Gmail reminders, follow-up tracking, shared registers synced across PCs, and automated tests so the tools keep working.',
+  },
+  {
     name: 'Power BI & Excel',
     desc: 'DAX, data modelling and KPI dashboards, plus advanced Excel with Power Query and Pivot Tables.',
   },
@@ -25,16 +33,12 @@ export const SKILLS = [
     desc: 'Joins, CTEs and window functions in SQL. Pandas, NumPy and Scikit-learn in Python for cleaning, analysis and classification.',
   },
   {
-    name: 'AI Automation',
-    desc: 'Process automation with Claude and Claude Code: internal tools, LLM workflows and prompt engineering, and training staff to use them.',
-  },
-  {
-    name: 'Forecasting',
-    desc: 'Time-series forecasting with ARIMA and SARIMA in R, plus statistical analysis and data quality checks.',
-  },
-  {
     name: 'KPIs & Reporting',
     desc: 'Defining and tracking KPIs such as First Contact Resolution and Average Handling Time, and delivering reports end to end.',
+  },
+  {
+    name: 'Modelling & Forecasting',
+    desc: 'Classification with class weighting and gradient boosting, and ARIMA forecasts in R. I now test every model on data it has not seen.',
   },
 ];
 
@@ -92,6 +96,6 @@ export const PROJECTS: Project[] = [
 ];
 
 export const MARQUEE_ROWS = [
-  ['Power BI', 'DAX', 'SQL', 'Python', 'Excel', 'Power Query', 'Claude Code', 'KPI Dashboards'],
-  ['ARIMA', 'SARIMA', 'R', 'Scikit-learn', 'Pandas', 'Tableau', 'ETL', 'LLM Automation'],
+  ['Claude Code', 'Process Automation', 'Power BI', 'DAX', 'SQL', 'Python', 'LLM Automation', 'Excel'],
+  ['Prompt Engineering', 'Power Query', 'KPI Dashboards', 'Scikit-learn', 'Pandas', 'ETL', 'ARIMA', 'R', 'Tableau'],
 ];
