@@ -63,29 +63,28 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Road Accident Severity',
-    category: 'MSc project · 2024',
+    category: 'MSc project · 2024, rebuilt 2026',
     summary:
-      'Population risk analysis of UK STATS19 accident data from 2005 to 2017, with classification models, a multi-page Power BI dashboard and an ARIMA forecast to 2027.',
-    tools: ['Python', 'R', 'Power BI', 'Scikit-learn'],
+      'Predicts whether a UK road accident killed or seriously injured someone, using STATS19 police records from 2005 to 2017. My 2024 model scored 88% by predicting "Slight" every time, so I rebuilt it with class weighting and gradient boosting and tested it on 2016 and 2017, years it never saw.',
+    tools: ['Python', 'Scikit-learn', 'Streamlit', 'Power BI'],
     stats: [
       { value: '2,047,256', label: 'STATS19 records' },
-      { value: '88.34%', label: 'accuracy, logistic regression' },
-      { value: '0.92%', label: 'MAPE, ARIMA forecast' },
+      { value: '49%', label: 'of serious or fatal accidents caught' },
+      { value: '1.9×', label: 'risk in the top 10% flagged' },
     ],
-    link: { label: 'GitHub', href: LINKS.github },
+    link: { label: 'GitHub', href: `${LINKS.github}/road-accident-severity` },
   },
   {
     name: 'London Fly-Tipping BI',
-    category: 'MSc project · 2023',
+    category: 'MSc project · 2023, checked 2026',
     summary:
-      'A Power BI report on London Datastore fly-tipping data from 2011 to 2022, with ARIMA and SARIMA forecasts for 3 and 10 years ahead, to 2031.',
-    tools: ['Power BI', 'R', 'Power Query'],
+      'A Power BI report on fly-tipping enforcement across London, using London Datastore data from 2011 to 2022, with ARIMA forecasts in R. In 2026 I tested the forecast on three new years, found the yearly figures had been modelled out of order, and fixed it.',
+    tools: ['Power BI', 'Power Query', 'R', 'Python'],
     stats: [
-      { value: '8', label: 'KPIs across 32 boroughs' },
-      { value: '2.67%', label: 'MAPE, 3-year forecast' },
-      { value: '3.4%', label: 'MAPE, 10-year forecast' },
+      { value: '33', label: 'London local authorities' },
+      { value: '363', label: 'records, 2011 to 2022' },
+      { value: '47% → 5%', label: 'forecast error after the fix' },
     ],
-    link: { label: 'GitHub', href: LINKS.github },
   },
 ];
 
