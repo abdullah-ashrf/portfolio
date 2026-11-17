@@ -13,7 +13,7 @@ export const HERO = {
 };
 
 export const ABOUT_TEXT =
-  "I'm a data analyst in Abu Dhabi with an MSc in Data Analytics from London Metropolitan University. At a PRO and admin services firm, I moved three branches from manual spreadsheets to Power BI reporting and made reporting 40% more efficient. I also build tools with Claude: attestation letters now take about 3 minutes instead of 15, and Expiry Desk, our renewal tracker, runs on 15 office PCs.";
+  "I'm a data analyst in Abu Dhabi with an MSc in Data Analytics from London Metropolitan University. At a PRO and admin services firm, I moved three branches from manual spreadsheets to Power BI reporting and made reporting 40% more efficient. I also build tools with Claude: attestation letters now take about 3 minutes instead of 15, and Expiry Desk, our renewal tracker, runs on 20 office PCs.";
 
 export const SKILLS = [
   {
