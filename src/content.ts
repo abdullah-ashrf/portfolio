@@ -18,7 +18,7 @@ export const ABOUT_TEXT =
 export const SKILLS = [
   {
     name: 'AI Automation',
-    desc: 'Internal tools built with Claude and Claude Code. Expiry Desk tracks renewals for 80–90 client companies and is used by 20 staff. Attestation letters went from about 15 minutes to 3 with Python and Claude. I train the team to use what I build.',
+    desc: 'Internal tools built with Claude and Claude Code. Expiry Desk tracks renewals for 120+ client companies and is used by 20 staff. Attestation letters went from about 15 minutes to 3 with Python and Claude. I train the team to use what I build.',
   },
   {
     name: 'Process Automation',
@@ -62,7 +62,7 @@ export const PROJECTS: Project[] = [
     tools: ['Claude Code', 'Google Drive sync', 'Playwright tests'],
     stats: [
       { value: '20', label: 'staff using it' },
-      { value: '80–90', label: 'corporate clients tracked' },
+      { value: '120+', label: 'corporate clients tracked' },
       { value: '5 → 20', label: 'PCs since launch' },
     ],
     image: { src: '/expiry-desk.webp', alt: 'Expiry Desk home screen, shown with made-up company names' },
