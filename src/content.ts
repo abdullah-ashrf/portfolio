@@ -68,6 +68,18 @@ export const PROJECTS: Project[] = [
     image: { src: '/expiry-desk.webp', alt: 'Expiry Desk home screen, shown with made-up company names' },
   },
   {
+    name: 'Office Workflow System',
+    category: 'Work · Internal tool · Pilot in daily use',
+    summary:
+      'A web tracker that follows each visa application and company document from front desk to labour to immigration and back. Every person has their own status, required-field checks, automatic reminders and a full history of who did what. Staff open one shared record instead of forwarding emails or searching government sites, which saves an estimated 30% of the time spent finding files.',
+    tools: ['Claude Code', 'Web app', 'Automated tests'],
+    stats: [
+      { value: '8', label: 'staff using it' },
+      { value: '2', label: 'client companies handled' },
+      { value: '~50%', label: 'less time to send a client their file (estimate)' },
+    ],
+  },
+  {
     name: 'Road Accident Severity',
     category: 'MSc project · 2024, rebuilt 2026',
     summary:
