@@ -93,16 +93,20 @@ function ProjectCard({
             className={`flex flex-col justify-between gap-6 p-5 sm:p-8 md:w-[60%] md:p-10 ${PANEL_RADIUS}`}
             style={{ background: PANEL_BG, border: '1px solid rgba(215,226,234,0.12)' }}
           >
-            {project.image && (
-              <a href={project.image.src} target="_blank" rel="noreferrer">
-                <img
-                  src={project.image.src}
-                  alt={project.image.alt}
-                  loading="lazy"
-                  className="w-full rounded-2xl border border-[#D7E2EA]/20 object-cover object-left-top"
-                  style={{ height: 'clamp(120px, 10vw, 170px)' }}
-                />
-              </a>
+            {project.images && (
+              <div className="flex gap-3">
+                {project.images.map((img) => (
+                  <a key={img.src} href={img.src} target="_blank" rel="noreferrer" className="min-w-0 flex-1">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="w-full rounded-2xl border border-[#D7E2EA]/20 object-cover object-left-top"
+                      style={{ height: 'clamp(120px, 10vw, 170px)' }}
+                    />
+                  </a>
+                ))}
+              </div>
             )}
             <p
               className="font-light leading-relaxed text-[#D7E2EA]/85"

@@ -50,7 +50,7 @@ export type Project = {
   tools: string[];
   stats: [Stat, Stat, Stat];
   link?: { label: string; href: string };
-  image?: { src: string; alt: string };
+  images?: { src: string; alt: string }[];
 };
 
 export const PROJECTS: Project[] = [
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
       { value: '120+', label: 'corporate clients tracked' },
       { value: '5 → 20', label: 'PCs since launch' },
     ],
-    image: { src: '/expiry-desk.webp', alt: 'Expiry Desk home screen, shown with made-up company names' },
+    images: [{ src: '/expiry-desk.webp', alt: 'Expiry Desk home screen, shown with made-up company names' }],
   },
   {
     name: 'Office Workflow System',
@@ -77,6 +77,10 @@ export const PROJECTS: Project[] = [
       { value: '15', label: 'office computers using it' },
       { value: '34', label: 'client companies handled' },
       { value: '~50%', label: 'less time to send a client their file (estimate)' },
+    ],
+    images: [
+      { src: '/office-workflow-dashboard.webp', alt: 'Office Workflow dashboard with sample data and made-up names' },
+      { src: '/office-workflow-person.webp', alt: 'Office Workflow person page with sample data and made-up names' },
     ],
   },
   {
